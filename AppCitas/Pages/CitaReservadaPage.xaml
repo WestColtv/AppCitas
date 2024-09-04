@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCitas.CitaReservadaPage"
+             Title="Cita reservada">
+    <VerticalStackLayout 
+        Padding="20" Spacing="20">
+        
+        <Label Text="Cita reservada" 
+               FontSize="Large" 
+               HorizontalOptions="Center"/>
+        
+        <Label x:Name="FechaLabel"/>
+        
+        <Label x:Name="EspecialidadLabel"/>
+        
+        <Label x:Name="MedicoLabel"/>
+        
+        <Button Text="Cancelar Cita" 
+                Clicked="OnCancelarCitaClicked" 
+                BackgroundColor="Gray" 
+                TextColor="White"/>
+        
+        <Button Text="Aceptar" 
+                Clicked="OnAceptarClicked" 
+                BackgroundColor="Purple" 
+                TextColor="White"/>
+        
+    </VerticalStackLayout>
+</ContentPage>

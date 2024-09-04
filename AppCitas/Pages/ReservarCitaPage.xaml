@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCitas.ReservarCitaPage"
+             Title="Reservar Cita">
+    
+    <VerticalStackLayout 
+        Padding="20" Spacing="20">
+        
+        <DatePicker x:Name="FechaPicker"/>
+        
+        <Picker x:Name="EspecialidadPicker" 
+                Title="Especialidad"/>
+        
+        <Picker x:Name="MedicoPicker" 
+                Title="Médico(a)"/>
+        
+        <Button Text="Reservar" 
+                Clicked="OnReservarClicked" 
+                BackgroundColor="Purple" 
+                TextColor="White"/>
+        
+    </VerticalStackLayout>
+</ContentPage>
